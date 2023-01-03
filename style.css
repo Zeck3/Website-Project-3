@@ -1,0 +1,60 @@
+/* HTML */
+
+
+/* Texts Modification */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+h1, h3, h4{
+    font-family: 'Anton', sans-serif;
+}
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font-size: 16px;
+}
+h2, h5, p, ul{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Root */
+
+:root{
+    --primary: #182236;
+    --dark: #795A30;
+    --light: #FDFDFE;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Background Modification */
+
+body{
+    background:
+        linear-gradient(#070B21, transparent),
+        linear-gradient(to top left, #0D2779, transparent),
+        linear-gradient(to top right, #FDFDFE, transparent);
+    background-blend-mode: screen;
+    line-height: 1.4;
+}
+.main-nav{
+    background: var(--light);
+    box-shadow: var(--shadow);
+    display: flex;
+    margin-bottom: 20px;
+}
+.logo{
+}
+.nav-bar{
+
+}
+
+
