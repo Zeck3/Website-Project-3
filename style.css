@@ -1,11 +1,9 @@
-/* HTML */
-
-
 /* Texts Modification */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 h1, h3, h4{
-    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    color: var(--light3);
 }
 h1{
     font-size: 70px;
@@ -24,37 +22,98 @@ h5{
 }
 h2, h5, p, ul{
     font-family: 'Poppins', sans-serif;
+    color: var(--light3);
 }
 
 /* Root */
 
 :root{
-    --primary: #182236;
-    --dark: #795A30;
-    --light: #FDFDFE;
-    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --dark: #1B4965;
+    --light0: #5FA8D3;
+    --light1: #62B6CB;
+    --light2: #CAE9FF;
+    --light3: #FDFDFE;
+    --shadow: 0px 1px 2px rgba(104, 104, 104, 0.8);
 }
 
 /* Background Modification */
 
 body{
     background:
-        linear-gradient(#070B21, transparent),
-        linear-gradient(to top left, #0D2779, transparent),
-        linear-gradient(to top right, #FDFDFE, transparent);
-    background-blend-mode: screen;
-    line-height: 1.4;
+        linear-gradient(#CAE9FF , transparent),
+        linear-gradient(to top left, #FDFDFE, transparent),
+        linear-gradient(to top right, #5FA8D3, transparent);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
 }
+
+/* Wrapper */
+.wrapper{
+    display: grid;
+}
+
+/* Navigation Bar */
+
 .main-nav{
-    background: var(--light);
+    background: var(--dark);
     box-shadow: var(--shadow);
-    display: flex;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .logo{
+    max-width: 300px;
+    justify-self: start;
+    margin-left: 20px;
+}
+.logo h3{
+    margin: 0px;
+    text-align: center;
+    text-shadow: var(--shadow);
 }
 .nav-bar{
-
+    display: grid;
+    max-width: 500px;
+    grid-column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: end;
+    margin-right: 20px;
+}
+.nav-bar ul{
+    padding: 0px;
+    text-align: center;
+    padding-top: 10%;
+    text-shadow: var(--shadow);
 }
 
+/* Header */
 
+.showcase{
+    display: grid;
+    background: url(./Images/6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #1B4965;
+    background-blend-mode: screen;
+    box-shadow: var(--shadow);
+    height: 800px;
+}
+.showcase h1{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-shadow: var(--shadow);
+    background-color: rgba(0, 0, 0, 0.25);
+    max-height: 100px;
+    font-size: 100px;
+    align-self: end;
+}
+.showcase p{
+    margin: 0px;
+    text-align: center;
+    text-shadow: var(--shadow);
+    background-color: rgba(0, 0, 0, 0.25);
+    max-height: 50px;
+    align-self: start;
+}
