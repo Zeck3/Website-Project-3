@@ -1,4 +1,4 @@
-/* Texts Modification */
+/* Texts */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 h1, h3, h4{
@@ -28,6 +28,7 @@ h2, h5, p, ul{
 /* Root */
 
 :root{
+    --darker: #0b1d28;
     --dark: #1B4965;
     --light0: #5FA8D3;
     --light1: #62B6CB;
@@ -36,7 +37,7 @@ h2, h5, p, ul{
     --shadow: 0px 1px 2px rgba(104, 104, 104, 0.8);
 }
 
-/* Background Modification */
+/* Background */
 
 body{
     background:
@@ -49,11 +50,6 @@ body{
     margin: 0px;
 }
 
-/* Wrapper */
-.wrapper{
-    display: grid;
-}
-
 /* Navigation Bar */
 
 .main-nav{
@@ -63,12 +59,21 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 .logo{
+    display: grid;
     max-width: 300px;
     justify-self: start;
     margin-left: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
 }
 .logo h3{
     margin: 0px;
+    text-align: center;
+    text-shadow: var(--shadow);
+}
+.logo span{
+    font-size: 50px;
+    color: var(--light3);
     text-align: center;
     text-shadow: var(--shadow);
 }
@@ -94,7 +99,7 @@ body{
     background: url(./Images/6.jpg);
     background-size: cover;
     background-position: center;
-    background-color: #1B4965;
+    background-color: var(--dark);
     background-blend-mode: screen;
     box-shadow: var(--shadow);
     height: 800px;
@@ -108,6 +113,7 @@ body{
     max-height: 100px;
     font-size: 100px;
     align-self: end;
+    padding-top: 100px;
 }
 .showcase p{
     margin: 0px;
@@ -116,4 +122,53 @@ body{
     background-color: rgba(0, 0, 0, 0.25);
     max-height: 50px;
     align-self: start;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+/* Body */
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.section-part{
+    background-color: var(--dark);
+    width: 200px;
+    padding: 15px;
+}
+.section-part img{
+    box-shadow: var(--shadow);
+    align-self: center;
+    width: 100%;
+}
+.section-part h4{
+    text-shadow: var(--shadow);
+    margin: 0px;
+}
+.section-part p{
+    text-shadow: var(--shadow);
+}
+.box1{
+    background: var(--light3);
+    width: 100%;
+}
+.box1 p{
+    color: var(--dark);
+}
+.box2{
+    background: var(--light3);
+    width: 100%;
+}
+.box2 p{
+    color: var(--dark);
+}
+/* Footer */
+
+footer{
+    background-color: var(--darker);
+    height: 100px;
+}
+.contact-details{
+    text-align: center;
 }
